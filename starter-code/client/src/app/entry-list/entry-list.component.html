@@ -1,0 +1,7 @@
+<div class="parent">
+  <div class="el" *ngFor="let l of list">
+      <h3> {{ l.title }} </h3>
+      <p> {{ l.date }} </p>
+      <a [routerLink]="['list', l._id]"> View Details </a>
+  </div>
+</div>
